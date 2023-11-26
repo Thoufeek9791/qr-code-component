@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto&display=swap');
+
+$white: #fff;
+$grey-blue:   #d5e1ef;
+$light-grey: #b5b8bf;
+$dark-blue:  #242f45;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    background-color: $grey-blue;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 16px;
+}
+
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .qr {
+        background-color: $white;
+        padding: 16px;
+        display: grid;
+        gap: 16px;
+        border-radius: 16px;
+
+        @media (min-width: 320px) {
+            width: 280px;
+        }
+
+        img {
+            border-radius: 16px;
+        }
+
+        .qr-content {
+            text-align: center;
+            padding: 8px;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 16px;
+                color: $dark-blue;
+            }
+
+            p {
+                color:$light-grey;
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .attribution {
+        font-size: 14px;;
+    }
+}
+
+
+
